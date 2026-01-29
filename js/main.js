@@ -248,96 +248,139 @@ const resources = {
         content: `
             <h2>Smart Factory Video Library</h2>
             
-            <p>Explore our comprehensive collection of video tutorials, demonstrations, and guides for the Smart Factory system.</p>
+            <p>Watch official Matrix Technology Solutions video guides and demonstrations for the Smart Factory system.</p>
             
-            <h3>📹 Getting Started Series</h3>
-            <div class="video-section">
-                <div class="video-placeholder">
-                    <p><strong>Introduction to Smart Factory</strong></p>
-                    <p>Overview of the system components and capabilities</p>
-                    <a href="https://www.matrixtsl.com/webshop/smart-factory/" target="_blank" class="btn btn-video">
-                        🎬 Watch on Matrix TSL
-                    </a>
-                </div>
-            </div>
+            <h3>🎬 Official Matrix TSL Videos</h3>
             
-            <h3>🔧 Setup & Configuration</h3>
-            <div class="video-section">
-                <div class="video-placeholder">
-                    <p><strong>Hardware Setup Guide</strong></p>
-                    <p>Step-by-step hardware assembly and connection</p>
+            <div class="video-grid">
+                <div class="video-container">
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/ZWTGgyT7ocs" 
+                            title="Smart Factory Video 1" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <h4>Smart Factory Introduction</h4>
+                        <p>Overview of the Smart Factory educational system</p>
+                    </div>
                 </div>
-                <div class="video-placeholder">
-                    <p><strong>TIA Portal Configuration</strong></p>
-                    <p>Configuring your PLC and HMI system</p>
+                
+                <div class="video-container">
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/EsESmjIidKI" 
+                            title="Smart Factory Video 2" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <h4>System Demonstration</h4>
+                        <p>Watch the Smart Factory in action</p>
+                    </div>
                 </div>
-            </div>
-            
-            <h3>💡 Programming Tutorials</h3>
-            <div class="video-section">
-                <div class="video-placeholder">
-                    <p><strong>Ladder Logic Basics</strong></p>
-                    <p>Introduction to PLC programming</p>
-                </div>
-                <div class="video-placeholder">
-                    <p><strong>Conveyor System Control</strong></p>
-                    <p>Programming the conveyor belt system</p>
-                </div>
-                <div class="video-placeholder">
-                    <p><strong>Pick & Place Operations</strong></p>
-                    <p>Programming the pneumatic and stepper systems</p>
-                </div>
-            </div>
-            
-            <h3>🎓 Lesson Examples</h3>
-            <div class="video-section">
-                <div class="video-placeholder">
-                    <p><strong>Sample Lesson Delivery</strong></p>
-                    <p>Watch experienced teachers demonstrate lesson delivery</p>
+                
+                <div class="video-container">
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/uovtW9GCLX4" 
+                            title="Smart Factory Video 3" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <h4>Programming & Control</h4>
+                        <p>Learn how to program and control the system</p>
+                    </div>
                 </div>
             </div>
             
             <div class="document-link">
-                <a href="https://www.matrixtsl.com/webshop/smart-factory/" target="_blank" class="btn btn-primary">
-                    🌐 Visit Matrix TSL for More Resources
+                <a href="https://www.youtube.com/@MatrixTSL" target="_blank" class="btn btn-primary">
+                    🎥 Visit Matrix TSL YouTube Channel
+                </a>
+                <a href="https://www.matrixtsl.com/webshop/smart-factory/" target="_blank" class="btn btn-info" style="margin-left: 1rem;">
+                    🌐 View Product Details
                 </a>
             </div>
             
             <style>
-                .video-section {
+                .video-grid {
                     display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-                    gap: 1.5rem;
-                    margin: 1.5rem 0 2rem 0;
+                    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                    gap: 2rem;
+                    margin: 2rem 0 3rem 0;
                 }
-                .video-placeholder {
-                    background: linear-gradient(135deg, 
-                        rgba(52, 152, 219, 0.05) 0%, 
-                        rgba(212, 165, 116, 0.05) 100%);
-                    border: 2px dashed rgba(52, 152, 219, 0.3);
+                
+                .video-container {
+                    background: linear-gradient(135deg,
+                        rgba(255, 255, 255, 0.95) 0%,
+                        rgba(248, 249, 250, 0.95) 100%);
                     border-radius: 12px;
+                    overflow: hidden;
+                    box-shadow: 0 4px 16px rgba(26, 43, 74, 0.12);
+                    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+                    border: 1px solid rgba(52, 152, 219, 0.1);
+                }
+                
+                .video-container:hover {
+                    transform: translateY(-8px);
+                    box-shadow: 0 12px 32px rgba(52, 152, 219, 0.2);
+                    border-color: rgba(52, 152, 219, 0.3);
+                }
+                
+                .video-wrapper {
+                    position: relative;
+                    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+                    height: 0;
+                    overflow: hidden;
+                    background: #000;
+                }
+                
+                .video-wrapper iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                }
+                
+                .video-info {
                     padding: 1.5rem;
-                    text-align: center;
-                    transition: all 0.3s ease;
                 }
-                .video-placeholder:hover {
-                    border-color: rgba(52, 152, 219, 0.6);
-                    background: linear-gradient(135deg, 
-                        rgba(52, 152, 219, 0.1) 0%, 
-                        rgba(212, 165, 116, 0.1) 100%);
-                    transform: translateY(-4px);
-                }
-                .video-placeholder p {
+                
+                .video-info h4 {
+                    font-family: 'Sora', sans-serif;
+                    font-size: 1.15rem;
+                    font-weight: 700;
+                    color: var(--primary-navy);
                     margin-bottom: 0.5rem;
                 }
-                .video-placeholder strong {
-                    color: var(--primary-navy);
-                    font-size: 1.05rem;
+                
+                .video-info p {
+                    color: var(--text-medium);
+                    font-size: 0.95rem;
+                    line-height: 1.6;
                 }
-                .video-placeholder .btn {
-                    margin-top: 1rem;
-                    padding: 0.75rem 1.5rem;
-                    font-size: 0.9rem;
+                
+                @media (max-width: 768px) {
+                    .video-grid {
+                        grid-template-columns: 1fr;
+                    }
+                    
+                    .document-link a {
+                        display: block;
+                        margin: 0.5rem 0 !important;
+                        width: 100%;
+                    }
                 }
             </style>
         `
