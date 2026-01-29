@@ -967,6 +967,12 @@ function openResource(resourceKey) {
 
 function showModal() {
     const modal = document.getElementById('resourceModal');
+    console.log('[MODAL_SHOW]', {
+        display: modal.style.display,
+        visibility: modal.style.visibility,
+        pointerEvents: modal.style.pointerEvents,
+        zIndex: getComputedStyle(modal).zIndex
+    });
     modal.style.display = 'flex';
     modal.style.pointerEvents = 'auto';
     modal.style.visibility = 'visible';
@@ -976,6 +982,7 @@ function showModal() {
 
 function hideModal() {
     const modal = document.getElementById('resourceModal');
+    console.log('[MODAL_HIDE]');
     modal.style.display = 'none';
     modal.style.pointerEvents = 'none';
     modal.style.visibility = 'hidden';
@@ -1044,11 +1051,24 @@ function initiateDownload(event) {
 // Global click handler for buttons (simplified + reliable)
 document.addEventListener('click', function(event) {
     const btn = event.target.closest('button[data-resource], button[data-download]');
+    console.log('[CLICK]', {
+        target: event.target.tagName,
+        id: event.target.id,
+        class: event.target.className,
+        hasButton: !!btn,
+        resource: btn?.dataset?.resource,
+        download: btn?.dataset?.download,
+        x: event.clientX,
+        y: event.clientY
+    });
+
     if (!btn) return;
 
     if (btn.dataset.resource) {
+        console.log('[OPEN_RESOURCE]', btn.dataset.resource);
         openResource(btn.dataset.resource);
     } else if (btn.dataset.download) {
+        console.log('[DOWNLOAD_TIA]');
         downloadTiaPortal();
     }
 });
@@ -1057,6 +1077,7 @@ document.addEventListener('click', function(event) {
 window.addEventListener('click', function(event) {
     const modal = document.getElementById('resourceModal');
     if (event.target === modal) {
+        console.log('[MODAL_OVERLAY_CLICK]');
         closeModal();
     }
 });
