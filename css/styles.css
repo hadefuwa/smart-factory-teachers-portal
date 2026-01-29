@@ -218,9 +218,24 @@ body::after {
     font-size: 0.85rem;
 }
 
-.login-note {
-    margin-top: 0.5rem;
-    font-style: italic;
+.login-banner {
+    margin-top: 0.75rem;
+    background: linear-gradient(135deg, rgba(212, 165, 116, 0.12), rgba(52, 152, 219, 0.08));
+    border: 1px solid rgba(212, 165, 116, 0.3);
+    border-radius: 10px;
+    padding: 0.9rem 1rem;
+    color: var(--text-medium);
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+.login-banner strong {
+    color: var(--primary-navy);
+}
+
+.login-banner .contact {
+    color: var(--bright-teal);
+    font-weight: 600;
 }
 
 .logout-container {
