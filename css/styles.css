@@ -108,6 +108,10 @@ main,
     pointer-events: auto;
 }
 
+.tile {
+    cursor: pointer;
+}
+
 .tile,
 .tile *,
 .btn,

@@ -1060,29 +1060,27 @@ function initiateDownload(event) {
 
 let lastModalOpenTs = 0;
 
-// Global click handler for buttons (simplified + reliable)
+// Global click handler for tiles (more reliable than buttons)
 document.addEventListener('click', function(event) {
-    const btn = event.target.closest('button[data-resource], button[data-download]');
+    const tile = event.target.closest('.tile[data-resource], .tile[data-download]');
     console.log('[CLICK]', {
         target: event.target.tagName,
-        id: event.target.id,
         class: event.target.className,
-        hasButton: !!btn,
-        resource: btn?.dataset?.resource,
-        download: btn?.dataset?.download,
+        hasTile: !!tile,
+        resource: tile?.dataset?.resource,
+        download: tile?.dataset?.download,
         x: event.clientX,
         y: event.clientY
     });
 
-    if (!btn) return;
+    if (!tile) return;
 
-    // Prevent the click from immediately closing the modal
     event.stopPropagation();
 
-    if (btn.dataset.resource) {
-        console.log('[OPEN_RESOURCE]', btn.dataset.resource);
-        openResource(btn.dataset.resource);
-    } else if (btn.dataset.download) {
+    if (tile.dataset.resource) {
+        console.log('[OPEN_RESOURCE]', tile.dataset.resource);
+        openResource(tile.dataset.resource);
+    } else if (tile.dataset.download) {
         console.log('[DOWNLOAD_TIA]');
         downloadTiaPortal();
     }
