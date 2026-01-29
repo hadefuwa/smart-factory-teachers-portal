@@ -66,6 +66,16 @@ const resources = {
                 <li>Problem-solving in industrial contexts</li>
             </ul>
             
+            <h3>📏 Key Specifications</h3>
+            <div class="spec-grid">
+                <div class="spec-item"><strong>Power Supply:</strong> 24V</div>
+                <div class="spec-item"><strong>Length:</strong> 720 mm</div>
+                <div class="spec-item"><strong>Width:</strong> 556 mm</div>
+                <div class="spec-item"><strong>Height:</strong> 316 mm</div>
+                <div class="spec-item"><strong>Product Code:</strong> AU5555</div>
+                <div class="spec-item"><strong>Curriculum Code:</strong> CP4902</div>
+            </div>
+            
             <h3>📦 Product Information</h3>
             <div class="product-codes">
                 <div class="product-item">
@@ -90,6 +100,22 @@ const resources = {
                     🌐 View on Matrix TSL Website
                 </a>
             </div>
+            
+            <style>
+                .spec-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                    gap: 0.75rem;
+                    margin: 1rem 0 2rem 0;
+                }
+                .spec-item {
+                    background: rgba(52, 152, 219, 0.08);
+                    border: 1px solid rgba(52, 152, 219, 0.2);
+                    padding: 0.75rem 1rem;
+                    border-radius: 8px;
+                    font-size: 0.9rem;
+                }
+            </style>
             
             <style>
                 .spec-intro {
@@ -145,104 +171,198 @@ const resources = {
     'curriculum': {
         title: 'Smart Factory Curriculum',
         content: `
-            <h2>Curriculum Structure</h2>
+            <h2>Smart Factory 2 & Industry 4.0 Curriculum (CP4902)</h2>
             
-            <h3>Module 1: Introduction to Smart Manufacturing</h3>
-            <ul>
-                <li>Week 1-2: Industry 4.0 Overview</li>
-                <li>Week 3-4: Manufacturing Automation Basics</li>
-            </ul>
+            <p><strong>63-page structured curriculum</strong> designed to deliver modern industrial automation skills through guided worksheets and practical tasks.</p>
             
-            <h3>Module 2: PLC Fundamentals</h3>
-            <ul>
-                <li>Week 5-6: Introduction to Siemens TIA Portal</li>
-                <li>Week 7-8: Ladder Logic Programming</li>
-                <li>Week 9-10: Function Blocks and Data Types</li>
-            </ul>
+            <h3>📘 Core Worksheets</h3>
+            <div class="curriculum-grid">
+                <div class="curriculum-item">Worksheet 1 – Understanding Sensors</div>
+                <div class="curriculum-item">Worksheet 2 – Reject Mechanisms</div>
+                <div class="curriculum-item">Worksheet 3 – Understanding the Conveyor</div>
+                <div class="curriculum-item">Worksheet 4 – Sorting Counters</div>
+                <div class="curriculum-item">Worksheet 5 – Driving the Stepper Motor</div>
+                <div class="curriculum-item">Worksheet 6 – Understanding the Plunger</div>
+                <div class="curriculum-item">Worksheet 7 – Delivering Counters</div>
+                <div class="curriculum-item">Worksheet 8 – Robot Arm</div>
+                <div class="curriculum-item">Worksheet 9 – Commissioning the Cell</div>
+                <div class="curriculum-item">Worksheet 10 – Completing the Smart Factory</div>
+                <div class="curriculum-item">Worksheet 11 – Defects & Reset Sequence</div>
+                <div class="curriculum-item">Worksheet 12 – Vision System</div>
+                <div class="curriculum-item">Worksheet 13 – RFID</div>
+                <div class="curriculum-item">Worksheet 14 – Network & Communications</div>
+                <div class="curriculum-item">Worksheet 15 – Data Logging</div>
+                <div class="curriculum-item">Worksheet 16 – Analytics</div>
+                <div class="curriculum-item">Worksheet 17 – IO Link</div>
+                <div class="curriculum-item">Worksheet 18 – Predictive Maintenance</div>
+            </div>
             
-            <h3>Module 3: Smart Factory Integration</h3>
-            <ul>
-                <li>Week 11-12: Sensor Integration</li>
-                <li>Week 13-14: HMI Development</li>
-                <li>Week 15-16: System Testing and Commissioning</li>
-            </ul>
+            <h3>🎓 Student Handbook Included</h3>
+            <p>Curriculum includes a dedicated Student Handbook and Safety Notes.</p>
             
             <div class="document-link">
                 <a href="assets/documents/curriculum.pdf" target="_blank" class="btn btn-success">
                     📚 Download Full Curriculum (PDF)
                 </a>
             </div>
+            
+            <style>
+                .curriculum-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+                    gap: 0.75rem;
+                    margin: 1.5rem 0;
+                }
+                .curriculum-item {
+                    background: rgba(39, 174, 96, 0.08);
+                    border: 1px solid rgba(39, 174, 96, 0.2);
+                    padding: 0.75rem 1rem;
+                    border-radius: 8px;
+                    font-size: 0.9rem;
+                    transition: all 0.2s ease;
+                }
+                .curriculum-item:hover {
+                    background: rgba(39, 174, 96, 0.12);
+                    transform: translateY(-2px);
+                    box-shadow: 0 4px 10px rgba(39, 174, 96, 0.15);
+                }
+            </style>
         `
     },
+
     'teachers-guide': {
         title: 'Teachers Guide',
         content: `
-            <h2>Teaching the Smart Factory Course</h2>
+            <h2>Teacher Guide (CP7329T)</h2>
             
-            <h3>Getting Started</h3>
-            <p>This guide provides comprehensive support for delivering the Smart Factory curriculum.</p>
+            <p><strong>Smart Factory Teacher Guide</strong> provides structured classroom delivery for practical assignments that teach real industrial work-cell design challenges.</p>
             
-            <h3>Lesson Planning</h3>
+            <h3>🧩 Module Structure</h3>
+            <p>Students bring together three distinct modules to create a complete automation system:</p>
             <ul>
-                <li>Pre-lesson preparation checklist</li>
-                <li>Required materials and equipment</li>
-                <li>Estimated time allocation</li>
-                <li>Learning objectives and outcomes</li>
+                <li><strong>Conveyor System</strong></li>
+                <li><strong>Gantry System</strong></li>
+                <li><strong>Robot Arm System</strong></li>
             </ul>
             
-            <h3>Teaching Tips</h3>
+            <h3>✅ Classroom Delivery Options</h3>
             <ul>
-                <li>Start with hands-on demonstrations</li>
-                <li>Encourage problem-solving approaches</li>
-                <li>Use real-world industrial examples</li>
-                <li>Facilitate peer collaboration</li>
+                <li>Single student completes all assignments</li>
+                <li>Group project with 3 students on individual modules</li>
+                <li>Final integration as collaborative class challenge</li>
             </ul>
             
-            <h3>Assessment Strategies</h3>
-            <ul>
-                <li>Practical skills evaluation</li>
-                <li>Project-based assessments</li>
-                <li>Written knowledge tests</li>
-                <li>Portfolio development</li>
-            </ul>
+            <h3>🧠 Practical Task Sequence</h3>
+            <div class="task-grid">
+                <div class="task-card">
+                    <h4>Step 1 – Gantry Pick & Place</h4>
+                    <ul>
+                        <li>Stepper motor drives</li>
+                        <li>Limit switches</li>
+                        <li>Electro-pneumatic valves (3/2 & 5/2)</li>
+                        <li>Vacuum suction systems</li>
+                        <li>Positional control</li>
+                    </ul>
+                </div>
+                
+                <div class="task-card">
+                    <h4>Step 2 – Conveyor Sorting</h4>
+                    <ul>
+                        <li>DC motor control using PWM</li>
+                        <li>Inductive & capacitive sensors</li>
+                        <li>Light gates</li>
+                        <li>Reject mechanisms</li>
+                        <li>Timing-based positioning</li>
+                    </ul>
+                </div>
+                
+                <div class="task-card">
+                    <h4>Step 3 – Robot Arm Sorting</h4>
+                    <ul>
+                        <li>Robot arm programming</li>
+                        <li>Pick, sort and place logic</li>
+                        <li>System integration</li>
+                        <li>Automation sequencing</li>
+                    </ul>
+                </div>
+            </div>
             
             <div class="document-link">
                 <a href="assets/documents/teachers-guide.pdf" target="_blank" class="btn btn-info">
                     👨‍🏫 Download Teachers Guide (PDF)
                 </a>
             </div>
+            
+            <style>
+                .task-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+                    gap: 1.5rem;
+                    margin: 1.5rem 0 2rem 0;
+                }
+                .task-card {
+                    background: linear-gradient(135deg, rgba(45, 74, 124, 0.08), rgba(52, 152, 219, 0.05));
+                    border: 1px solid rgba(45, 74, 124, 0.2);
+                    border-radius: 12px;
+                    padding: 1.5rem;
+                    transition: all 0.3s ease;
+                }
+                .task-card:hover {
+                    border-color: var(--rich-blue);
+                    box-shadow: 0 8px 20px rgba(45, 74, 124, 0.15);
+                    transform: translateY(-4px);
+                }
+                .task-card h4 {
+                    margin-bottom: 0.75rem;
+                    color: var(--primary-navy);
+                }
+                .task-card ul {
+                    margin-left: 1rem;
+                }
+            </style>
         `
     },
+
     'user-manual': {
         title: 'Smart Factory User Manual',
         content: `
-            <h2>User Manual</h2>
+            <h2>Smart Factory Manual (CP5279)</h2>
             
-            <h3>System Setup</h3>
-            <ol>
-                <li>Power up the PLC unit</li>
-                <li>Connect to the HMI panel</li>
-                <li>Launch TIA Portal software</li>
-                <li>Load the project file</li>
-            </ol>
+            <p><strong>Comprehensive setup and operation manual</strong> covering hardware, wiring, pneumatics, software, and PLC/HMI options.</p>
             
-            <h3>Operating Instructions</h3>
-            <p>Step-by-step guide for operating the Smart Factory system.</p>
+            <h3>📘 Manual Contents</h3>
+            <div class="manual-grid">
+                <div class="manual-item">Product Setup</div>
+                <div class="manual-item">PLC Options</div>
+                <div class="manual-item">Wiring Diagrams</div>
+                <div class="manual-item">Pneumatics Diagram</div>
+                <div class="manual-item">Robot Arm Setup</div>
+                <div class="manual-item">Functionality Test</div>
+                <div class="manual-item">Loading Software on AU3686</div>
+                <div class="manual-item">Loading Software on AU0205</div>
+                <div class="manual-item">Operating with AU0205</div>
+                <div class="manual-item">Getting Started with Robot Arm</div>
+                <div class="manual-item">Introduction to Programming</div>
+                <div class="manual-item">Connecting Robot Arm to S7 (Wi‑Fi)</div>
+                <div class="manual-item">Motion Control Technology Object</div>
+                <div class="manual-item">Function Blocks for Robot Arm</div>
+                <div class="manual-item">Control via Web Server</div>
+            </div>
             
-            <h3>Safety Procedures</h3>
+            <h3>🧩 Included Modules (Hardware)</h3>
             <ul>
-                <li>Always use emergency stop when needed</li>
-                <li>Follow lockout/tagout procedures</li>
-                <li>Wear appropriate PPE</li>
-                <li>Keep work area clean and organized</li>
-            </ul>
-            
-            <h3>Troubleshooting</h3>
-            <ul>
-                <li>PLC communication errors</li>
-                <li>Sensor calibration issues</li>
-                <li>HMI display problems</li>
-                <li>Network connectivity</li>
+                <li>AU0696 – Gantry</li>
+                <li>AU9318 – Base</li>
+                <li>AU4353 – Conveyor</li>
+                <li>AU6707 – Sensor Unit</li>
+                <li>AU1437 – Paddle (x2)</li>
+                <li>AU1443 – Vacuum Generator</li>
+                <li>AU9633 – 3/2 Valve (x3)</li>
+                <li>AU2834 – 5/2 Valve (x1)</li>
+                <li>AU6004 – Manifold</li>
+                <li>AU0358 – Counter Rack + Counters</li>
+                <li>AU7654 – Red Bins (x5)</li>
+                <li>Light sensor PCB holder, tubing, clips, and accessories</li>
             </ul>
             
             <div class="document-link">
@@ -250,8 +370,25 @@ const resources = {
                     📖 Download User Manual (PDF)
                 </a>
             </div>
+            
+            <style>
+                .manual-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                    gap: 0.75rem;
+                    margin: 1.5rem 0;
+                }
+                .manual-item {
+                    background: rgba(212, 165, 116, 0.08);
+                    border: 1px solid rgba(212, 165, 116, 0.25);
+                    padding: 0.75rem 1rem;
+                    border-radius: 8px;
+                    font-size: 0.9rem;
+                }
+            </style>
         `
     },
+
     'quick-start': {
         title: 'Quick Start Guide',
         content: `
