@@ -355,13 +355,22 @@ const observer = new IntersectionObserver(function(entries) {
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', function() {
-    // Observe all tiles
-    document.querySelectorAll('.tile').forEach(tile => {
+    // Staggered tile reveal animation
+    document.querySelectorAll('.tile').forEach((tile, index) => {
         tile.style.opacity = '0';
-        tile.style.transform = 'translateY(20px)';
-        tile.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        tile.style.transform = 'translateY(40px) scale(0.9)';
+        tile.style.transition = 'opacity 0.8s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1)';
+        
+        // Staggered delay for each tile
+        setTimeout(() => {
+            tile.style.opacity = '1';
+            tile.style.transform = 'translateY(0) scale(1)';
+        }, 200 + (index * 150));
+        
         observer.observe(tile);
     });
     
-    console.log('Smart Factory Teachers Portal loaded successfully! 🏭');
+    // Log with style
+    console.log('%c🏭 Smart Factory Teachers Portal', 'color: #00d9ff; font-size: 20px; font-weight: bold; font-family: "JetBrains Mono", monospace;');
+    console.log('%cIndustrial Tech Design System Active', 'color: #00ff88; font-size: 12px; font-family: "JetBrains Mono", monospace;');
 });
