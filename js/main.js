@@ -4,29 +4,142 @@ const resources = {
         title: 'Smart Factory Specification Document',
         content: `
             <h2>Smart Factory Technical Specification</h2>
-            <p>This document will contain the complete technical specifications for the Smart Factory system.</p>
             
-            <h3>System Overview</h3>
+            <div class="spec-intro">
+                <p><strong>The Smart Factory is designed to immerse students in the cutting-edge world of manufacturing and Industry 4.0 principles.</strong></p>
+                <p>This comprehensive system equips students with practical experience in various processes and technologies prevalent in today's industrial landscape.</p>
+            </div>
+            
+            <h3>🏭 System Components</h3>
+            
+            <div class="component-card">
+                <h4>Conveyor Systems</h4>
+                <p>Simulate real-world manufacturing scenarios with robust conveyor systems. Learn how conveyor belts are used to transport materials efficiently in industrial settings.</p>
+                <ul>
+                    <li>Variable speed DC motor control</li>
+                    <li>Material transport simulation</li>
+                    <li>Industrial-grade belt system</li>
+                </ul>
+            </div>
+            
+            <div class="component-card">
+                <h4>Sensing Systems</h4>
+                <p>Experience advanced sensing technology including optical, proximity, and colour sensors.</p>
+                <ul>
+                    <li><strong>Optical Sensors:</strong> Detection and positioning</li>
+                    <li><strong>Proximity Sensors:</strong> Object detection</li>
+                    <li><strong>Colour Sensors:</strong> RGB disc sorting</li>
+                    <li>Program sensors to sort coloured discs based on specific attributes</li>
+                    <li>Mirrors modern quality control systems</li>
+                </ul>
+            </div>
+            
+            <div class="component-card">
+                <h4>Pneumatic Pick and Place Technology</h4>
+                <p>Utilize pneumatic actuators and vacuum grippers to automate material handling.</p>
+                <ul>
+                    <li>Pneumatic actuators for motion control</li>
+                    <li>Vacuum grippers for material handling</li>
+                    <li>Automated assembly line simulation</li>
+                    <li>Real-world manufacturing process replication</li>
+                </ul>
+            </div>
+            
+            <div class="component-card">
+                <h4>DC Motor & Stepper Motor Drivers</h4>
+                <p>Control and power various motors to drive conveyor belts and sorting gantries.</p>
+                <ul>
+                    <li>DC motor control for conveyor systems</li>
+                    <li>Stepper motor precision positioning</li>
+                    <li>Gantry sorting system control</li>
+                    <li>Motor control techniques for industrial automation</li>
+                </ul>
+            </div>
+            
+            <h3>🎓 Real-World Application & Skills Development</h3>
+            <p>The Smart Factory offers students hands-on experience with technologies used in modern manufacturing, providing:</p>
             <ul>
-                <li>Siemens S7-1200 PLC Integration</li>
-                <li>Industrial Sensors and Actuators</li>
-                <li>HMI Touch Panel Interface</li>
-                <li>SCADA System Integration</li>
+                <li>Practical experience with Industry 4.0 technologies</li>
+                <li>Understanding of automated manufacturing processes</li>
+                <li>PLC programming and control skills</li>
+                <li>System integration knowledge</li>
+                <li>Problem-solving in industrial contexts</li>
             </ul>
             
-            <h3>Learning Outcomes</h3>
-            <ul>
-                <li>Understanding of Industry 4.0 concepts</li>
-                <li>PLC programming fundamentals</li>
-                <li>Process automation principles</li>
-                <li>Industrial networking basics</li>
-            </ul>
+            <h3>📦 Product Information</h3>
+            <div class="product-codes">
+                <div class="product-item">
+                    <strong>Smart Factory System</strong>
+                    <p>REF: CP7329 / AU4956</p>
+                </div>
+                <div class="product-item">
+                    <strong>Siemens S7 PLC with HMI</strong>
+                    <p>REF: AU0205</p>
+                </div>
+                <div class="product-item">
+                    <strong>Siemens Control Add-on</strong>
+                    <p>REF: AU3686</p>
+                </div>
+            </div>
             
             <div class="document-link">
                 <a href="assets/documents/specification.pdf" target="_blank" class="btn btn-primary">
                     📄 Download Full Specification (PDF)
                 </a>
+                <a href="https://www.matrixtsl.com/smartfactory/" target="_blank" class="btn btn-info" style="margin-left: 1rem;">
+                    🌐 View on Matrix TSL Website
+                </a>
             </div>
+            
+            <style>
+                .spec-intro {
+                    background: linear-gradient(135deg, rgba(52, 152, 219, 0.1), rgba(212, 165, 116, 0.1));
+                    padding: 1.5rem;
+                    border-radius: 12px;
+                    margin-bottom: 2rem;
+                    border-left: 4px solid var(--bright-teal);
+                }
+                .component-card {
+                    background: rgba(248, 249, 250, 0.5);
+                    border: 1px solid rgba(52, 152, 219, 0.2);
+                    border-radius: 12px;
+                    padding: 1.5rem;
+                    margin: 1.5rem 0;
+                    transition: all 0.3s ease;
+                }
+                .component-card:hover {
+                    border-color: var(--bright-teal);
+                    box-shadow: 0 4px 16px rgba(52, 152, 219, 0.15);
+                    transform: translateX(8px);
+                }
+                .component-card h4 {
+                    color: var(--primary-navy);
+                    margin-bottom: 0.75rem;
+                    font-size: 1.2rem;
+                }
+                .product-codes {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                    gap: 1rem;
+                    margin: 1.5rem 0 2rem 0;
+                }
+                .product-item {
+                    background: linear-gradient(135deg, rgba(212, 165, 116, 0.1), rgba(52, 152, 219, 0.1));
+                    padding: 1rem;
+                    border-radius: 8px;
+                    border: 1px solid rgba(212, 165, 116, 0.3);
+                }
+                .product-item strong {
+                    color: var(--primary-navy);
+                    display: block;
+                    margin-bottom: 0.5rem;
+                }
+                .product-item p {
+                    color: var(--text-medium);
+                    font-family: 'JetBrains Mono', monospace;
+                    font-size: 0.9rem;
+                }
+            </style>
         `
     },
     'curriculum': {
@@ -426,15 +539,72 @@ const resources = {
             the conveyor by a suction device and a stepper motor-controlled gantry sorts the discs into 
             appropriately coloured containers.</p>
             
-            <h3>📦 Key Components</h3>
-            <ul>
-                <li><strong>Conveyor System:</strong> Variable speed belt transport system</li>
-                <li><strong>Sensing Systems:</strong> Color detection, position sensors</li>
-                <li><strong>Pneumatic Pick & Place:</strong> Vacuum suction technology</li>
-                <li><strong>Stepper Motor Gantry:</strong> Precise positioning control</li>
-                <li><strong>DC Motor Drives:</strong> Conveyor belt control</li>
-                <li><strong>Sorting System:</strong> Multiple rejection bins with programmable logic</li>
-            </ul>
+            <h3>📦 Key Components & Technologies</h3>
+            
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <h4>🔄 Conveyor Systems</h4>
+                    <p>Variable speed DC motor-driven belt transport system simulating real-world manufacturing material flow.</p>
+                </div>
+                
+                <div class="tech-item">
+                    <h4>👁️ Sensing Systems</h4>
+                    <p><strong>Optical sensors:</strong> Detection and positioning<br>
+                    <strong>Proximity sensors:</strong> Object detection<br>
+                    <strong>Colour sensors:</strong> RGB disc sorting and quality control</p>
+                </div>
+                
+                <div class="tech-item">
+                    <h4>🤖 Pneumatic Pick & Place</h4>
+                    <p>Pneumatic actuators with vacuum grippers for automated material handling and assembly line simulation.</p>
+                </div>
+                
+                <div class="tech-item">
+                    <h4>⚙️ Motor Control</h4>
+                    <p><strong>DC Motors:</strong> Conveyor belt speed control<br>
+                    <strong>Stepper Motors:</strong> Precision gantry positioning for sorting operations</p>
+                </div>
+                
+                <div class="tech-item">
+                    <h4>📊 Sorting System</h4>
+                    <p>Multiple rejection bins with programmable logic for intelligent disc sorting based on color and material.</p>
+                </div>
+                
+                <div class="tech-item">
+                    <h4>💻 PLC Integration</h4>
+                    <p>Siemens S7 PLC with HMI control system for professional-grade automation programming.</p>
+                </div>
+            </div>
+            
+            <style>
+                .tech-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                    gap: 1.5rem;
+                    margin: 2rem 0;
+                }
+                .tech-item {
+                    background: linear-gradient(135deg, rgba(248, 249, 250, 0.8), rgba(255, 255, 255, 0.9));
+                    border: 1px solid rgba(52, 152, 219, 0.2);
+                    border-radius: 12px;
+                    padding: 1.5rem;
+                    transition: all 0.3s ease;
+                }
+                .tech-item:hover {
+                    border-color: var(--bright-teal);
+                    box-shadow: 0 8px 24px rgba(52, 152, 219, 0.15);
+                    transform: translateY(-4px);
+                }
+                .tech-item h4 {
+                    color: var(--primary-navy);
+                    margin-bottom: 0.75rem;
+                    font-size: 1.1rem;
+                }
+                .tech-item p {
+                    font-size: 0.95rem;
+                    line-height: 1.7;
+                }
+            </style>
             
             <h3>🎯 Learning Objectives</h3>
             <ul>
@@ -455,15 +625,73 @@ const resources = {
             <p>The Smart Factory is compatible with the <strong>AllCode robot arm production cell</strong>, 
             which can be added to provide a powerful and interesting Industry 4.0 solution.</p>
             
-            <h3>📏 Compact Design</h3>
+            <h3>📦 Smart Factory Solutions</h3>
+            <p>The Smart Factory comes with comprehensive resources to ensure successful implementation:</p>
+            <ul>
+                <li><strong>Easy-to-Follow Manual:</strong> Step-by-step guidance for setup, operation, and maintenance</li>
+                <li><strong>PLC Options:</strong> Multiple controller configurations available</li>
+                <li><strong>Wiring Diagrams:</strong> Complete electrical schematics</li>
+                <li><strong>Pneumatics Guide:</strong> Air system setup and operation</li>
+                <li><strong>Software Resources:</strong> Programming examples and templates</li>
+            </ul>
+            
+            <h3>🔧 Optional Add-Ons</h3>
+            <div class="addon-grid">
+                <div class="addon-card">
+                    <h4>Siemens HMI with 4mm Connectors</h4>
+                    <p>Professional-grade human-machine interface for enhanced control and visualization.</p>
+                    <p><strong>REF:</strong> AU0205</p>
+                </div>
+                <div class="addon-card">
+                    <h4>Robot Arm V2</h4>
+                    <p>Extend your Smart Factory with robotic automation for a complete Industry 4.0 solution.</p>
+                </div>
+            </div>
+            
+            <h3>📏 Compact & Portable Design</h3>
             <p>The smart factory is <strong>completely self-contained</strong> and can be stored away in 
             one of our standard trays, making it perfect for educational environments with limited space.</p>
             
             <div class="document-link">
-                <a href="https://www.matrixtsl.com/webshop/smart-factory/" target="_blank" class="btn btn-info">
-                    🌐 View Full Product Details on Matrix TSL
+                <a href="https://www.matrixtsl.com/smartfactory/" target="_blank" class="btn btn-info">
+                    🌐 View Full Product Details
+                </a>
+                <a href="https://www.matrixtsl.com/webshop/smart-factory/" target="_blank" class="btn btn-primary" style="margin-left: 1rem;">
+                    🛒 Visit Webshop
                 </a>
             </div>
+            
+            <style>
+                .addon-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+                    gap: 1.5rem;
+                    margin: 1.5rem 0 2rem 0;
+                }
+                .addon-card {
+                    background: linear-gradient(135deg, rgba(212, 165, 116, 0.1), rgba(52, 152, 219, 0.1));
+                    border: 1px solid rgba(212, 165, 116, 0.3);
+                    border-radius: 12px;
+                    padding: 1.5rem;
+                    transition: all 0.3s ease;
+                }
+                .addon-card:hover {
+                    border-color: var(--accent-gold);
+                    box-shadow: 0 8px 24px rgba(212, 165, 116, 0.2);
+                    transform: translateY(-4px);
+                }
+                .addon-card h4 {
+                    color: var(--primary-navy);
+                    margin-bottom: 0.75rem;
+                    font-size: 1.1rem;
+                }
+                .addon-card p {
+                    margin-bottom: 0.5rem;
+                }
+                .addon-card strong {
+                    color: var(--accent-gold);
+                }
+            </style>
         `
     }
 };
